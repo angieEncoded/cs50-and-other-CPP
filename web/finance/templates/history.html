@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block main %}
+
+    {% if not dataForDisplay %}
+        <p>No transaction history to show. </p>
+    {% endif %}
+
+
+
+
+    {% if dataForDisplay %}
+        <div class="container">
+            <h1>History</h1>
+            <table class="table mt-5">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Stock Name</th>
+                        <th>Number Of Shares</th>
+                        <th>Purchase Price</th>
+                        <th>Purchase Date</th>
+                        <th>Purchase Type</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    {% for item in dataForDisplay %}
+                        <tr>
+                            <td>{{ item.stock_symbol }}</td>
+                            <td>{{ item.stock_name }}</td>
+                            <td>{{ item.number_of_shares }}</td>
+                            <td>{{ item.price | usd }}</td>
+                            <td>{{ item.purchase_date }}</td>
+                            <td>{{ item.purchase_type }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+
+                    </tr>
+                </tbody>
+        </table>
+    {% endif %}
+
+
+
+{% endblock %}

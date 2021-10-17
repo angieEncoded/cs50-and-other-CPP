@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block main %}
+            <p><strong>Cash Balance: </strong> {{cashOnHand | usd}}</p>
+            <p><strong>Total value of Shares: </strong> {{totalSharesValue | usd}}</p>
+            <p><strong>Total Portfolio Value: {{totalValue | usd}}</strong></p>
+
+
+    {% if dataForDisplay %}
+        <div class="container">
+
+            <table class="table mt-5">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Stock Name</th>
+                        <th>Current Price</th>
+                        <th>Shares owned</th>
+                        <th>Total value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in dataForDisplay %}
+                        <tr>
+                            <td>{{ item.symbol }}</td>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.currentPrice | usd }}</td>
+                            <td>{{ item.sharesOwned }}</td>
+                            <td>{{ item.shareTotalValue | usd}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+
+                    </tr>
+                </tbody>
+        </table>
+    {% endif %}
+
+    {% if not dataForDisplay %}
+        <p>No current stocks owned. Please visit the buy page.</p>
+    {% endif %}
+
+
+{% endblock %}

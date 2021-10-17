@@ -258,3 +258,8 @@ id | abbreviation | full_name | city
 
 
 -- I hope we get the duck back soon.
+
+Note after 10/9/2021 week 8 lecture
+HOLY MACARONI I didn't even put together Bert and Ernie and that rubber duck!
+What a blast from my childhood that sadly I think maybe a lot of the younger
+folks won't 'get'

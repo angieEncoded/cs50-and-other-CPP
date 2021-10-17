@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quote
+{% endblock %}
+
+{% block main %}
+<form action="/quote" method="post">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Enter stock" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Lookup</button>
+</form>
+
+    {% if result %}
+        <div class="container">
+
+            <table class="table mt-5">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Symbol</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ result.name }}</td>
+                        <td>{{ result.price | usd }}</td>
+                        <td>{{ result.symbol }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+
+                    </tr>
+                </tbody>
+        </table>
+    {% endif%}
+
+
+{% endblock %}

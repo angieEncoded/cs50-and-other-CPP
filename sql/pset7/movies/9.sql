@@ -7,9 +7,14 @@
 -- If a person appeared in more than one movie in 2004,
 -- they should only appear in your results once.
 
-SELECT distinct(name) FROM people
+-- NOTE - after reading a little further up in the discord chat I saw that curiouskiwi
+-- had given a different student a helpful hint about what the bug could
+-- be. After grouping by the id, my counts match.
+
+SELECT name FROM people
 JOIN stars ON stars.person_id = people.id
 JOIN movies ON movies.id = stars.movie_id
 WHERE movies.year = 2004
+GROUP BY people.id
 ORDER BY people.birth ASC;
 

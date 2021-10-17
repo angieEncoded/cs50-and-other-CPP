@@ -1,0 +1,180 @@
+/* color Scheme  */
+ /* #DA7F8F */
+ /* #A7BBC7  */
+ /* #E1E5EA  */
+ /* #FAF3F3  */
+
+
+body {
+    background-color: #E1E5EA;
+    padding-top: 70px;
+}
+
+hr {
+    margin-left: auto;
+    margin-right: auto;
+    /* border-style: none;
+    border-top-style: dotted;
+    border-color:black; */
+    /* border-width: 3px; */
+    width: 80%;
+}
+
+a {
+    color: rgb(135, 17, 245);
+}
+
+a:hover {
+    color:rgb(176, 125, 223)
+}
+
+.title-font {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.25rem;
+    color:rgb(135, 17, 245);
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+}
+
+.main-font {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.50rem;
+}
+
+.info-font {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.work-font {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* Change the colors of the rows */
+.light-row {
+    background-color: #E1E5EA;
+}
+
+.dark-row {
+    background-color: #d8d5ff;
+}
+
+/* Frame the images for the home page */
+.imageFrame {
+    overflow: hidden;
+    border-radius:50%;
+    border: 1px solid  rgb(135, 17, 245);
+    max-width: 300px;
+    -webkit-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+}
+
+.logoFrame {
+    overflow: hidden;
+    border-radius:3%;
+    max-width: 25rem;
+    -webkit-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    border: 1px solid  rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bootstrapLogoFrame {
+    overflow: hidden;
+    border-radius:3%;
+    max-width: 280px;
+    -webkit-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    border: 1px solid  rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.msiLogoFrame {
+    overflow: hidden;
+    border-radius:3%;
+    max-width: 258px;
+    -webkit-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    border: 1px solid  rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comptiaLogoFrame {
+    overflow: hidden;
+    border-radius:3%;
+    max-width: 300px;
+    -webkit-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    border: 1px solid  rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dendriteLogoFrame {
+    overflow: hidden;
+    border-radius:3%;
+    max-width: 256px;
+    -webkit-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    border: 1px solid  rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.schoolFrame {
+    overflow: hidden;
+    border-radius:10%;
+    padding: 5px;
+    border: 1px solid  rgb(0, 0, 0);
+    max-width: 300px;
+    -webkit-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+}
+
+.ciwFrame {
+    overflow: hidden;
+    border-radius:5%;
+    padding: 5px;
+    border: 1px solid  rgb(0, 0, 0);
+    max-width: 400px;
+    -webkit-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+    box-shadow: 3px 6px 5px -2px rgba(0,0,0,0.5);
+}
+
+
+
+li {
+    list-style-type: none;
+}
+
+.card-img-top {
+    border-bottom: 1px solid black;
+}
+
+.carousel-img-control {
+    max-width: 500px;
+
+}
+
+.hobbies {
+    border: 1px solid  rgb(135, 17, 245);
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+}
